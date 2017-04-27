@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="../dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">注册<span class="sr-only">(current)</span></a></li>
+                <li><a href="#">登录</a></li>
+                <li><a href="#">通知</a></li>
+                <li><a href="#">设置</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+
+<div class="container">
+    <div class="row bigtit">
+        <div class="col-md-2 sanxin">三鑫智慧社区</div>
+        <div class="col-md-8 tit1">
+            <ul class="nav nav-pills">
+                <li role="presentation"><a href="#">首页</a></li>
+                <li role="presentation"><a href="#">社区团体活动服务</a></li>
+                <li role="presentation"><a href="#">党组织活动服务</a></li>
+                <li role="presentation"><a href="#">居民自治活动服务</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="row">
+        <ol class="breadcrumb navbar-left">
+            <span>当前位置：</span>
+            <li><a href="#">首页</a></li>
+            <li class="active">社会养老</li>
+            <li class="active">离休退休</li>
+        </ol>
+    </div>
+
+    <div class="birthday">
+        <dl>
+            <dt><img src="images/icons/icon_01.png" alt=""></dt>
+            <dd>
+                <h4>社区生日会</h4>
+                <p>提供社区五保供养申请的办理指南、注意事项、办理机构等相关的服务。</p>
+            </dd>
+        </dl>
+    </div>
+
+    <div class="list">
+        <ul class="nav nav-tabs">
+            <li role="presentation" ui-sref-active="active" ui-sref="child1"><a href="#">活动介绍</a></li>
+            <li role="presentation" ui-sref-active="active" ui-sref="child2"><a href="#">查看活动</a></li>
+            <li role="presentation" ui-sref-active="active" ui-sref="child3"><a href="#">活动总结</a></li>
+        </ul>
+    </div>
+    <div ui-view></div>
+
+
+</div>
+
+
+<script src="js/angular.js"></script>
+<script src="js/angular-ui-router.js"></script>
+<script src="js/index.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
